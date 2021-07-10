@@ -34,5 +34,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   northwind_dw:
       # Applies to all files under models/example/
-      example:
-          materialized: view
+      marts:
+          +materialized: table
+      staging:
+          +materialized: view
