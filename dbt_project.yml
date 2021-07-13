@@ -35,4 +35,9 @@ models:
   northwind_dw:
       # Applies to all files under models/example/
       example:
-          materialized: view
+          materialized: ephemeral
+      staging:
+          materialized: ephemeral
+      marts:
+          materialized: table
+
