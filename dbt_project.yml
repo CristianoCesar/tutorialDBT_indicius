@@ -34,7 +34,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   northwind_dw:
       # Applies to all files under models/example/
-<<<<<<< HEAD
       example:
           materialized: ephemeral
       staging:
@@ -42,9 +41,3 @@ models:
       marts:
           materialized: table
 
-=======
-      marts:
-          +materialized: table
-      staging:
-          +materialized: view
->>>>>>> f04a31c2b9ae9898c41e0a27477b49e02c9453e7
